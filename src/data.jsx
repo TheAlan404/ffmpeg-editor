@@ -11,6 +11,12 @@ export const data = {
             "This option can be used to suppress printing this information.",
             type: "bool",
         },
+        {
+            id: "progress",
+            name: "Print progress",
+            desc: "Prints progress to stderr",
+            type: "bool",
+        }
     ],
 
     fileOptions: [
@@ -293,6 +299,40 @@ export const data = {
     encoders: [],
     muxers: [],
     demuxers: [],
+
+    filters: [
+        {
+            id: "hflip",
+            name: "Flip video horizontally",
+            pos: ["video"],
+        },
+        {
+            id: "drawtext",
+            name: "Draw text",
+            desc: "Draw a text file or string on a video",
+            pos: ["video"],
+            options: [
+                { id: "box", desc: "Draw a box around text using bg color", type: "boolnum" },
+                { id: "boxcolor", if: [
+                    "box"
+                ], type: "color" },
+                { id: "boxborderw", desc: "Box border sizes", if: ["box"], type: "string"},
+                { id: "line_spacing", type: "number", default: 0 },
+                { id: "text_align", type: "concat", values: [
+                    { name: "Vertical", type: "enum", short: true, values: [
+                        { value: "T", label: "Top"},
+                        { value: "M", label: "Middle" },
+                        { value: "B", label: "Bottom" },
+                    ] },
+                    { name: "Horizontal", type: "enum", short: true, values: [
+                        { value: "L", label: "Left"},
+                        { value: "C", label: "Center" },
+                        { value: "R", label: "Right" },
+                    ] }
+                ] }
+            ],
+        },
+    ],
 
     videoSizeAbbr: {
         "ntsc": "720x480",
