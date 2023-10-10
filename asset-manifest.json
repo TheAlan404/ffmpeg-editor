@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ffmpeg-editor/static/css/main.fbdcd954.css",
+    "main.js": "/ffmpeg-editor/static/js/main.ddf44d27.js",
+    "index.html": "/ffmpeg-editor/index.html",
+    "main.fbdcd954.css.map": "/ffmpeg-editor/static/css/main.fbdcd954.css.map",
+    "main.ddf44d27.js.map": "/ffmpeg-editor/static/js/main.ddf44d27.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbdcd954.css",
+    "static/js/main.ddf44d27.js"
+  ]
+}
