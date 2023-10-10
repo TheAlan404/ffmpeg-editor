@@ -2,13 +2,15 @@
   "name": "ffmpeg-editor",
   "version": "1.0.0",
   "description": "Create, view, edit and analyze FFMPEG commands",
+  "homepage": "https://thealan404.github.io/ffmpeg-editor",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "TheAlan404",
+  "license": "GPL-3.0",
   "dependencies": {
     "@mantine/core": "^7.1.2",
     "@mantine/dates": "^7.1.2",
@@ -19,13 +21,13 @@
     "@tabler/icons-react": "^2.38.0",
     "dayjs": "^1.11.10",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "postcss": "^8.4.31",
     "postcss-preset-mantine": "^1.8.0",
-    "postcss-simple-vars": "^7.0.1"
+    "postcss-simple-vars": "^7.0.1",
+    "react-scripts": "^5.0.1"
   },
   "browserslist": {
     "production": [
